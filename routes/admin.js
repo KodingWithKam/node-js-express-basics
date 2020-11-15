@@ -1,18 +1,12 @@
 const express = require('express');
+const path = require('path');
 
 const router = express.Router();
 
 // admin/add-product
 router.get('/add-product',(req, res, next) => {
     //console.log('Im in middleware');
-    res.send(`
-        <html lang="en">
-            <title>Add Product</title>
-            <body>
-                <h1>Add Product Page</h1>
-                <form action="/admin/product" method="post"><input type="text" name="title"><button type="submit">Add Product</button></form>
-            </body>
-        </html>`);
+    res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html'));
     // next(); allows express to move on to next middleware in line
 });
 
