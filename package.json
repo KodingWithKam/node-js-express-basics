@@ -1,0 +1,26 @@
+{
+  "name": "js-express-basics",
+  "version": "1.0.0",
+  "description": "NodeJS Express Basics",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koding-with-kam/node-js-express-basics.git"
+  },
+  "author": "Kam Hayes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koding-with-kam/node-js-express-basics/issues"
+  },
+  "homepage": "https://github.com/koding-with-kam/node-js-express-basics#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
