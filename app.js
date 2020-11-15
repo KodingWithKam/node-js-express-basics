@@ -21,7 +21,7 @@ app.use('/add-product',(req, res, next) => {
     // next(); allows express to move on to next middleware in line
 });
 
-app.use('/product',(req, res, next) => {
+app.post('/product',(req, res, next) => {
     // Print request body from form
     console.log(req.body);
     res.redirect('/');
